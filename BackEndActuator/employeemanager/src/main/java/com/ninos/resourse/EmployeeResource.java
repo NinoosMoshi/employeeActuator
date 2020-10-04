@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+//@CrossOrigin
 @RequestMapping("/employee")
 @RestController
 public class EmployeeResource {
@@ -52,6 +53,8 @@ public class EmployeeResource {
         employeeService.deleteEmployee(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+
 
 
 
